@@ -1,13 +1,14 @@
-*.class
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Created by https://www.gitignore.io/api/maven,java,eclipse,intellij
 
-*.pydevproject
+### Maven ###
+target/
+log/
+
+
+### Eclipse ###
+
 .metadata
-.gradle
 bin/
 tmp/
 *.tmp
@@ -17,6 +18,10 @@ tmp/
 local.properties
 .settings/
 .loadpath
+.recommenders
+
+# Eclipse Core
+.project
 
 # External tool builders
 .externalToolBuilders/
@@ -24,14 +29,23 @@ local.properties
 # Locally stored "Eclipse launch configurations"
 *.launch
 
-# CDT-specific
-.cproject
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
 
-# PDT-specific
-.buildpath
+# Code Recommenders
+.recommenders/
 
-# sbteclipse plugin 
-.target
 
-# TeXlipse plugin
-.texlipse
+### Intellij ###
+
+# User-specific stuff:
+.idea/
+*.iml
+*.iws
+
+### Mac ###
+.DS_Store
+
+### Java ###
+*.class
+hs_err_pid*
